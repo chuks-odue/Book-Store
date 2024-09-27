@@ -6,9 +6,10 @@ function init() {
 function renderBooks(){
     let content = document.getElementById('content');
     content.innerHTML = '';
+    let bookList  = books
 
-    for (let i = 0; i < books.length; i++) {
-        const land = books[i];
+    for (let i = 0; i < bookList.length; i++) {
+        const land = bookList[i];
         content.innerHTML += generateHTML(i);
             
         
@@ -71,6 +72,21 @@ function getFromLocalStorage() {
   }
 }
 
+
+function searchBooks() {
+  let query = document.getElementById('searchInput').value.toLowerCase();   
+  let filteredBooks = books.filter(function(book){
+    return (book.name && book.name.toLowerCase().includes(query)) || 
+    (book.author && book.author.toLowerCase().includes(query)) || 
+    (book.genre && book.genre.toLowerCase().includes(query)) || 
+    (book.year && book.year.toString().includes(query));
+           
+  });  
+  let originalBooks = [...books]; 
+  books = filteredBooks; 
+    renderBooks();
+  books = originalBooks;
+}
 
 
 

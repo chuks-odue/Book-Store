@@ -1,12 +1,7 @@
-
-
-
-
-
 let books= [ 
   {   name: "PROFIT ONLINE",
       image:"img/Rosiette-Stock.png",
-      author: "CHISOIM UGWU",
+      author: "CHISOM UGWU",
       imglike: '',
       likes: 150,
       liked: true,
@@ -27,7 +22,7 @@ let books= [
   {
     name: "Work From Home",
     image:"img/Rosiette-Stock1.png",
-    author: "Mma Nkechi",
+    author: "Chukwunweike",
     imglike: 'img/liked (2).png',
     likes: 513,
     liked: true,
@@ -46,13 +41,13 @@ let books= [
   {
     name: "Marketing Strategy",
     image:"img/Rosiette-Stock2.png",
-    author: "Clara Meer",
+    author: "Peacly Gold",
     imglike: 'img/liked (2).png',
     likes: 1221,
     liked: true,
     price: 800.91,
     published: 1998,
-    genre: "Fantasy",
+    genre: "Horror",
     comments: [
       
         
@@ -82,19 +77,19 @@ let books= [
     liked: true,
     price: 99.99,
     published: 2001,
-    genre: "Fantasy",
+    genre: "Romantic",
     "comments": []
   },
   {
     name: "Akpa Ego",
     image:"img/Rosiette-Stock5.png",
-    author: "mma Nkechi",
+    author: "Ifunanya Obi",
     imglike: 'img/liked (2).png',
     likes: 1001,
     liked: true,
     price: 300.59,
     published: 2010,
-    genre: "Fantasy",
+    genre: "love",
      comments: [
         
           
